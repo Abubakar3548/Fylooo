@@ -243,24 +243,111 @@ nav ul{
     gap: 15px;
 }
 
+/* Mobile styles (max-width: 600px) */
+@media (max-width: 600px) {
+    .wrapper {
+        width: 100%;
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .bigcont {
+        flex-direction: column;
+    }
+
+    .text, .image img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .productive {
+        flex-direction: column;
+        padding: 20px;
+        background-image: url('./images/bg-curve-mobile.svg');
+    }
+
+    .right-product img {
+        width: 100%;
+    }
+
+    .getaccess {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .gety, .emailcom {
+        width: 100%;
+    }
+
+    .foot {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Tablet styles (min-width: 601px and max-width: 992px) */
+@media (min-width: 601px) and (max-width: 992px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    nav ul {
+        justify-content: space-around;
+    }
+
+    .bigcont {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .text {
+        width: 50%;
+    }
+
+    .image img {
+        width: 50%;
+    }
+
+    .productive {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+        background-image: url('./images/bg-curve-tablet.svg');
+    }
+
+    .right-product img {
+        width: 50%;
+    }
+
+    .getaccess {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .gety, .emailcom {
+        width: 45%;
+    }
+
+    .foot {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
 
 
-/* main{
-    width: 100%;
-    padding: 50px;
-    padding-right: 50px;
-}
-.bigcont{
-    display: flex;
-    justify-content: space-between
-}
-.text{
-    width: 800px;
-    justify-content: center;
-    height: 500px;
-    border: 1px solid black;
 
-}
-.content{
-    width: 100%;
-} */
+
+
